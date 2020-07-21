@@ -1,0 +1,22 @@
+{
+  "name": "3scale-audit-jerb",
+  "version": "1.0.0",
+  "description": "Grab audit from previous month and shove it into S3",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d0d00n/3scale-audit-jerb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/d0d00n/3scale-audit-jerb/issues"
+  },
+  "homepage": "https://github.com/d0d00n/3scale-audit-jerb#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
