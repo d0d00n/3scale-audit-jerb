@@ -29,6 +29,9 @@ try{
         if (d.getMonth() === 0){
             dateForFile += '-12';
         }
+        else if (d.getMonth() < 10){
+            dateForFile += '-0' + d.getMonth(); // 0-based month digit works. pad digit with zero
+        }
         else{
             dateForFile += '-' + d.getMonth(); // 0-based month digit works well since we don't actually have to subtract anything...
         }
