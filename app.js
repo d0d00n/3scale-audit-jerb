@@ -1,4 +1,3 @@
-const axios = require('axios');
 const mysql = require('mysql');
 const fs = require('fs');
 const zlib = require('zlib');

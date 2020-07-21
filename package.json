@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/d0d00n/3scale-audit-jerb#readme",
   "dependencies": {
-    "mysql": "^2.18.1"
+    "aws-sdk": "^2.716.0",
+    "fs": "0.0.1-security",
+    "mysql": "^2.18.1",
+    "zlib": "^1.0.5"
   }
 }
