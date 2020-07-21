@@ -32,7 +32,7 @@ try{
         else{
             dateForFile += '-' + d.getMonth(); // 0-based month digit works well since we don't actually have to subtract anything...
         }
-        const buffer = new Buffer(JSON.stringify(data), 'utf-8');
+        const buffer = new Buffer(JSON.stringify(results), 'utf-8');
         zlib.gzip(buffer, function (error,result){
             // take the file and shove it into AWS
             var objectParams = {Bucket : awsBucket, Key: s3AuditFolder+'/'+fileNamePrefix+dateForFile+'.gz', Body: result };
