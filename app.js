@@ -27,6 +27,8 @@ try{
         var d = new Date();
         var dateForFile = d.getFullYear();
         if (d.getMonth() === 0){
+			// need to go back to previous year
+			dateForFile = (d.getFullYear() - 1);
             dateForFile += '-12';
         }
         else if (d.getMonth() < 10){
